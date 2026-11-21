@@ -1,9 +1,5 @@
 import { useState } from "react";
-import LoginPage from "./features/auth/LoginPage";
-import SchedulePage from "./features/schedule/SchedulePage";
-import LessonPage from "./features/lesson/LessonPage";
-import ProfilePage from "./features/profile/ProfilePage";
-import AdminPage from "./features/admin/AdminPage";
+import { LoginPage, SchedulePage, LessonPage, ProfilePage, AdminPage } from "./pages";
 
 // Тимчасове перемикання сторінок (без маршрутизації).
 // У лабораторній №5 його замінить React Router.
