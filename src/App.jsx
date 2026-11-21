@@ -3,3 +3,4 @@ function App() {
 }
 
 export default App;
+// Кореневий компонент застосунку
