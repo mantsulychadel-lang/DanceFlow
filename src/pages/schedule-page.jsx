@@ -4,15 +4,10 @@ import styles from "./schedule-page.module.css";
 
 const days = ["Пн", "Вт", "Ср", "Чт", "Пт"];
 
-const links = [
-  { label: "Розклад", active: true },
-  { label: "Мій кабінет", active: false },
-];
-
 export function SchedulePage() {
   return (
     <>
-      <Header links={links} />
+      <Header />
       <main className={styles.wrap}>
         <h1>Розклад занять</h1>
         <div className={styles.grid}>

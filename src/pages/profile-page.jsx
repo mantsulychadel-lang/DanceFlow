@@ -7,15 +7,10 @@ import {
 } from "../features/subscriptions";
 import styles from "./profile-page.module.css";
 
-const links = [
-  { label: "Розклад", active: false },
-  { label: "Мій кабінет", active: true },
-];
-
 export function ProfilePage() {
   return (
     <>
-      <Header links={links} />
+      <Header />
       <main className={styles.wrap}>
         <h1>Мій кабінет</h1>
         <div className={styles.cols}>
