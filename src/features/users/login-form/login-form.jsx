@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../ui/button";
 import styles from "./login-form.module.css";
 
 export function LoginForm() {
   const [mode, setMode] = useState("login");
+  const navigate = useNavigate();
 
   return (
     <div className={styles.card}>
@@ -24,18 +26,20 @@ export function LoginForm() {
 
       {mode === "register" && (
         <>
-          <label htmlFor="name">Ім'я</label>
-          <input id="name" type="text" placeholder="Ваше ім'я" />
+          <label htmlFor="name">Імʼя</label>
+          <input id="name" type="text" placeholder="Ваше імʼя" />
         </>
       )}
 
       <label htmlFor="email">Електронна пошта</label>
-      <input id="email" type="email" placeholder="name@example.com" />
+      <input id="email" type="email" placeholder="name@student.uzhnu.edu.ua" />
 
       <label htmlFor="password">Пароль</label>
       <input id="password" type="password" placeholder="Ваш пароль" />
 
-      <Button>{mode === "login" ? "Увійти" : "Зареєструватися"}</Button>
+      <Button onClick={() => navigate("/schedule")}>
+        {mode === "login" ? "Увійти" : "Зареєструватися"}
+      </Button>
     </div>
   );
 }

@@ -1,14 +1,17 @@
 import { Button } from "../../ui/button";
 import { StatusBadge } from "../status-badge";
 import styles from "./lesson-card.module.css";
+import { Link } from "react-router-dom";
 
 export function LessonCard({ lesson }) {
-  const { time, title, trainer, free } = lesson;
+  const { id, time, title, trainer, free } = lesson;
 
   return (
     <article className={styles.card}>
       <div className={styles.time}>{time}</div>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className={styles.title}>
+        <Link to={`/lesso/${id}`}>{title}</Link>
+      </h3>
       <div>{trainer}</div>
       <div className={styles.badge}>
         <StatusBadge free={free} />
