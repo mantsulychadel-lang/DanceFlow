@@ -1,0 +1,25 @@
+.card {
+  background: #6c3be0;
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 4px 0 12px;
+}
+
+.bar {
+  height: 10px;
+  background: #4b2bb0;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+
+.fill {
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+}

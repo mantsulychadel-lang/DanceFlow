@@ -1,0 +1,78 @@
+.wrap {
+  display: flex;
+  gap: 32px;
+  padding: 32px 40px;
+  align-items: flex-start;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+
+.meta {
+  color: #4a4a5a;
+  font-size: 14px;
+}
+
+.photo {
+  height: 220px;
+  background: #e4dcf9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b2bb0;
+  margin: 16px 0;
+}
+
+.trainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e6e6ee;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.booking {
+  width: 380px;
+  background: #fff;
+  border: 1px solid #e6e6ee;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking h2 {
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+
+  .booking {
+    width: 100%;
+  }
+}
